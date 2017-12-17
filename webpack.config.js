@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require('path');  //shortcut to file system from node
 
 module.exports = {
-  entry: {
-    main: "./lib/index.js",
+  entry: {                             //pointing to the root of our project, which is just a bunch of statements requiring assets
+    main: "./lib/index.js",            //a bundle for your actual source code
     test: "mocha!./test/index.js"
   },
   output: {
